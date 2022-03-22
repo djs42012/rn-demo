@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Pressable} from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Big Testesssss</Text>
+      <Text>Big Testing Going On</Text>
       <Pressable style={styles.button} onPress={() =>{
         console.log("hellothere");
         alert("hello")}}> 
