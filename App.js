@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable, ScrollView} from 'react-native'; 
 import { Button, Avatar } from '@react-native-elements/themed';
 
-//const RaisedButton = (props) => <Button raised {...props} />;
+const RaisedButton = (props) => <Button raised {...props} />;
 
 type AvatarData = {
 image_url: string;
@@ -46,7 +46,7 @@ const Avatars: React.FunctionComponent<AvatarComponentProps> = () => {
 return (
   <>
     <ScrollView>
-      <Text styles={styles.subHeader}>Image Avatars</Text>
+      <Text style={styles.subHeader}>Image Avatars</Text>
       {dataList.chunk(3).map((chunk, chunkIndex) => (
         <View
           style={{
@@ -165,10 +165,10 @@ return (
         />
       </View>
 
-      <Text styles={styles.subHeader}>Badged Avatars</Text>
+      <Text style={styles.subHeader}>Badged Avatars</Text>
 
       <View
-        styles={{
+        style={{
           flexDirection: 'row',
           justifyContent: 'space-around',
           marginBottom: 40,
@@ -199,7 +199,7 @@ return (
 
 const styles = StyleSheet.create({
 subHeader: {
-  backgroundColor : "#2089dc",
+  backgroundColor : "purple",
   color : "white",
   textAlign : "center",
   paddingVertical : 5,
